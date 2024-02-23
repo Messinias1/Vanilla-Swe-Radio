@@ -2,6 +2,12 @@
   background-color: rgb(27, 26, 26);
 }
 
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .topnav {
   display: flex;
   justify-content: space-between;
@@ -33,6 +39,16 @@
 .title {
   text-align: center;
   color: rgb(180, 169, 47);
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 55px;
+}
+
+#radio-img {
+  margin-left: 55px;
+  margin-top: 25px;
+  border-radius: 25px;
 }
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */

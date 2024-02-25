@@ -51,6 +51,10 @@
   border-radius: 25px;
 }
 
+#radio-img:hover {
+  filter: hue-rotate(45deg) contrast(50%);
+}
+
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 600px) {
   .topnav input[type="text"] {

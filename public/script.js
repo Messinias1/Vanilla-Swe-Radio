@@ -24,6 +24,8 @@ const playStations = async () => {
 
     // Log the live audio URL to the console
     console.log(channel.liveaudio.url);
+    let audio = new Audio(channel.liveaudio.url);
+    audio.play(document.getElementById("radio-img"));
   });
   console.log(audio);
 };

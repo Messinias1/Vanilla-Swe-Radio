@@ -25,7 +25,7 @@ const playStations = async () => {
     // Log the live audio URL to the console
     console.log(channel.liveaudio.url);
   });
-  //   console.log(audio);
+  console.log(audio);
 };
 
 playStations();

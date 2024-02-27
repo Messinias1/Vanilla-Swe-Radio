@@ -4,8 +4,6 @@ const playStations = async () => {
   );
 
   const myJson = await response.json();
-  //   let audio = new Audio(myJson.data.channels);
-  console.log(myJson.channels[0]);
   const container = document.getElementById("card");
   // Clear previous content
   container.innerHTML = "";

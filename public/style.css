@@ -53,6 +53,17 @@
 
 #radio-img:hover {
   filter: hue-rotate(45deg) contrast(50%);
+  cursor: pointer;
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Style your play icon below */
+    font-size: 30px; /* Adjust size */
+    color: white; /* Icon color */
+    /* Optional: Add more styles to make it look more like a play button */
+  }
 }
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */

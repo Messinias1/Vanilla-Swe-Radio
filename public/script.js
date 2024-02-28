@@ -13,17 +13,25 @@ const playStations = async () => {
     img.src = channel.image;
     img.alt = `Image for ${channel.name}`;
     img.id = "radio-img";
-
-    // Optional: Set image width or add classes for styling
     img.style.width = "15%"; // Example width, adjust as needed
+
+    let audio = new Audio(channel.liveaudio.url);
+    // Toggle play/pause on click
+    img.addEventListener("click", function () {
+      if (audio.paused) {
+        // Stop all other audios playing
+        document.querySelectorAll("audio").forEach((el) => el.pause());
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    });
 
     // Append the new img element to the container
     container.appendChild(img);
 
     // Log the live audio URL to the console
     console.log(channel.liveaudio.url);
-    let audio = new Audio(channel.liveaudio.url);
-    audio.play(document.getElementById("radio-img"));
   });
   console.log(audio);
   console.log("hi");

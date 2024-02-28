@@ -26,6 +26,7 @@ const playStations = async () => {
     audio.play(document.getElementById("radio-img"));
   });
   console.log(audio);
+  console.log("hi");
 };
 
 playStations();

@@ -67,6 +67,7 @@ const playStations = async () => {
   // Create play/pause button
   const playPauseBtn = document.createElement("button");
   playPauseBtn.innerText = "Play/Pause";
+  playPauseBtn.borderRadius = "25px";
   playBar.appendChild(playPauseBtn);
 
   // Create label for the channel name

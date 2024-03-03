@@ -90,6 +90,7 @@ const playStations = async () => {
       if (!currentAudio.paused) {
         currentAudio.pause();
       }
+
       img.addEventListener("click", function () {
         if (currentAudio.paused) {
           // Stop all other audios playing
